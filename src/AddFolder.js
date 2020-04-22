@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ValiationError from './ValidationError';
 import ApiContext from './ApiContext';
+import PropTypes from 'prop-types'
 
 export default class AddFolder extends Component {
 
@@ -87,4 +88,10 @@ render() {
   </form>
     )
   }
+}
+
+AddFolder.propTypes = {
+  name: PropTypes.string,
+  folderValid: PropTypes.bool,
+  validMessage: PropTypes.string
 }

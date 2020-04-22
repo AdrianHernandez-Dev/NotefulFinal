@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import ApiContext from './ApiContext';
+import PropTypes from 'prop-types'
 
 export default class AddNote extends Component {
   constructor(props) {
@@ -150,4 +151,17 @@ export default class AddNote extends Component {
       </div>
     )
   }
+}
+
+AddNote.propTypes = {
+  noteName: PropTypes.string,
+  noteContent: PropTypes.string,
+  folder: PropTypes.string,
+  folderId: PropTypes.string,
+  validNoteMessage: PropTypes.string,
+  validNoteName: PropTypes.bool,
+  validContentMessage: PropTypes.string,
+  validContent: PropTypes.bool,
+  validFolderMessage: PropTypes.string,
+  validFolder: PropTypes.bool,
 }
