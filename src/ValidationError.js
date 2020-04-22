@@ -8,6 +8,6 @@ export default function ValiationError(props) {
   return <></>
 }
 
-ValidationError.propTypes = {
+ValiationError.propTypes = {
   hasError: PropTypes.string
 };
